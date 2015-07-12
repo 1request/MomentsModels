@@ -9,14 +9,18 @@
 import Foundation
 import RealmSwift
 
-class Video: Object {
+public class Video: Object {
     
     // MARK: Properties
     
-    dynamic var realmId: String = BBUUID.UUIDString()
-    dynamic var filename: String = ""
-    dynamic var selected: Bool = false
-    dynamic var createdAt: NSDate = NSDate()
-    dynamic var updatedAt: NSDate = NSDate()
+    public dynamic var realmId: String = BBUUID.UUIDString()
+    public dynamic var filename: String = ""
+    public dynamic var selected: Bool = false
+    public dynamic var createdAt: NSDate = NSDate()
+    public dynamic var updatedAt: NSDate = NSDate()
+    
+    override public class func primaryKey() -> String? {
+        return "realmId"
+    }
    
 }
