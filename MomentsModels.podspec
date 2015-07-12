@@ -9,20 +9,21 @@
 
 Pod::Spec.new do |s|
   s.name             = "MomentsModels"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of MomentsModels."
+  s.version          = "0.0.0"
+  s.summary          = "Realm Models for Moments."
   s.description      = <<-DESC
-                       An optional longer description of MomentsModels
+                       This is an internal pod for storing Models of Moments
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       * RealmSwift-based.
+                       * Models only
+                       * Unit Tests included (intend)
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MomentsModels"
+  # s.homepage         = "https://github.com/1request/MomentsModels"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Harry Ng" => "harryworld@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MomentsModels.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/1request/MomentsModels.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/harryworld'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -34,5 +35,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RealmSwift', '~> 0.93.2'
 end
