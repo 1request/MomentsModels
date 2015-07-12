@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MomentsModels_Example', :exclusive => true do
+  pod "MomentsModels", :path => "../"
+end
+
+target 'MomentsModels_Tests', :exclusive => true do
+  pod "MomentsModels", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
