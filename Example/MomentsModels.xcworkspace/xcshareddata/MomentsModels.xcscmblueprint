@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "039AA94CE9845E993C5CD449E4F7FB0C020B0A4A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "039AA94CE9845E993C5CD449E4F7FB0C020B0A4A" : 0,
+    "BDC5901DDA43AD8FDF4910E4DBE2A21E8C9AFD83" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3E387523-75EB-4297-A62E-D0B75BB1CD11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "039AA94CE9845E993C5CD449E4F7FB0C020B0A4A" : "MomentsModels",
+    "BDC5901DDA43AD8FDF4910E4DBE2A21E8C9AFD83" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MomentsModels",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/MomentsModels.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:1request\/MomentsModels.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "039AA94CE9845E993C5CD449E4F7FB0C020B0A4A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:1request\/hellobaby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BDC5901DDA43AD8FDF4910E4DBE2A21E8C9AFD83"
+    }
+  ]
+}
