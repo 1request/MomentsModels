@@ -11,6 +11,18 @@ import RealmSwift
 
 public class Video: Object {
     
+    // =================
+    // MARK: - Constants
+    // =================
+    
+    public static let realm = Video.realmInstance()
+    
+    private class func realmInstance() -> Realm {
+        var realm:Realm!
+        do { try realm = Realm() } catch let error { print("Realm Init Error! \(error)") }
+        return realm
+    }
+    
     // MARK: Properties
     
     public dynamic var realmId: String = BBUUID.UUIDString()
@@ -21,6 +33,31 @@ public class Video: Object {
     
     override public class func primaryKey() -> String? {
         return "realmId"
+    }
+    
+    // MARK: - Query
+    
+    public class func withId(id: String) -> Video? {
+        return realm.objectForPrimaryKey(Video.self, key: id)
+    }
+    
+    public class func videosSelected(inRealm realm: Realm = Video.realm) -> [Video] {
+        let videos = realm.objects(Video).filter("selected = true")
+        return videos.toArray(Video.self)
+    }
+    
+    public class func videoForFilename(filename: String, inRealm realm: Realm = Video.realm) -> Video? {
+        let result = realm.objects(Video).filter("filename = %@", filename)
+        return result.first
+    }
+    
+    // MARK: - Create or Update
+    
+    public func createOrUpdate() {
+        let realm = Video.realm
+        try! realm.write {
+            realm.add(self, update: true)
+        }
     }
    
 }

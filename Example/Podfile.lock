@@ -1,11 +1,11 @@
 PODS:
   - MomentsModels (0.0.0):
-    - RealmSwift (~> 0.96)
-  - Realm (0.96.0):
-    - Realm/Headers (= 0.96.0)
-  - Realm/Headers (0.96.0)
-  - RealmSwift (0.96.0):
-    - Realm (= 0.96.0)
+    - RealmSwift (~> 0.98.3)
+  - Realm (0.98.3):
+    - Realm/Headers (= 0.98.3)
+  - Realm/Headers (0.98.3)
+  - RealmSwift (0.98.3):
+    - Realm (= 0.98.3)
 
 DEPENDENCIES:
   - MomentsModels (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MomentsModels: a895ba2dca54d7b9dff4516ce7a00e2d0eea7ff1
-  Realm: d1b1eff5264cd6a3158b7a9b6c499d7f6ad3a860
-  RealmSwift: 40246e6f57a4e863bfdfc1ca1d7b967f0df607e2
+  MomentsModels: 51794c3147b74974fb6861aa8618879d4412a1e7
+  Realm: c6a7d00221a2d5177810a674aebd40c5e0b70b0f
+  RealmSwift: d6ecad6e4c2a645d6ac956c2c7e9efb375f39c31
 
 COCOAPODS: 0.39.0
