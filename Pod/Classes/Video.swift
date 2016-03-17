@@ -51,6 +51,11 @@ public class Video: Object {
         return result.first
     }
     
+    public class func isVideoExisted(date: NSDate) -> Bool {
+        let todayVideos = self.realm.objects(Video).filter("createdAt >= %@ and createdAt < %@", date.beginningOfDay(), date.endOfDay())
+        return todayVideos.count > 0
+    }
+    
     // MARK: - Create or Update
     
     public func createOrUpdate() {
