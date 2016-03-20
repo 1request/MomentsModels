@@ -42,7 +42,7 @@ public class Video: Object {
     }
     
     public class func videosSelected(inRealm realm: Realm = Video.realm) -> [Video] {
-        let videos = realm.objects(Video).filter("selected = true")
+        let videos = realm.objects(Video).filter("selected = true").sorted("createdAt")
         return videos.toArray(Video.self)
     }
     
